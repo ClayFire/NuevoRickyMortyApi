@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>infopersonaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <ion-card  *ngIf="character">
+    <ion-card-content>
+      <img [src]="[character.image]" alt="">
+     <ion-card-title>{{character.name}}</ion-card-title>
+    </ion-card-content>
+    <ion-card-content>
+    <p>{{character.status}}</p>
+    <p>{{character.species}}</p>
+    <p>{{character.type}}</p>
+    <p>{{character.gender}}</p>
+    <p>{{character.origin.name}}</p>
+    <p>{{character.location.name}}</p>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
